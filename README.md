@@ -10,7 +10,7 @@ graph TD
  router---|100Mb|ap[<center>RT-AC1200<br><br>10.20.30.3</center>]
  router---|1Gb|pc(<center>PC<br><br>10.20.30.190</center>)
  router---|1Gb|switch[<center>TL-SG105E<br><br>10.20.30.2</center>]
- subgraph node-prod{<center>NODE-PROD-POOL<br><br>10.20.30.1</center>}
+ subgraph node-prod
   subgraph node1-prod
   ap-.-cam1(<center>Camera<br><br>10.20.30.171</center>)
   ap-.-cam2(<center>Camera<br><br>10.20.30.172</center>)
