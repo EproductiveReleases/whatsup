@@ -3,7 +3,7 @@ Whats Up test
 ```mermaid
 graph TD
  linkStyle default interpolate basis
- wan1[<center>DSL 100/10 Mb<br><br>10.100.102.1</center>]---router{<center>EdgeRouter-X<br><br>10.20.30.1</center>}
+ wan1[<center>DSL 100/10 Mb<br><br>10.100.102.1</center>]---router{<center>Traffic Manager<br><br>10.20.30.1</center>}
  ip((<center><br>IP<br><br></center>))-.-router
  dns((<center><br>DNS<br><br></center>))-.-router
  wan2[<center>LTE 50/20 Mb<br><br>192.168.1.1</center>]---router
