@@ -10,13 +10,13 @@ graph TD
  router---|100Mb|ap[<center>RT-AC1200<br><br>10.20.30.3</center>]
  router---|1Gb|pc(<center>PC<br><br>10.20.30.190</center>)
  router---|1Gb|switch[<center>TL-SG105E<br><br>10.20.30.2</center>]
- subgraph red1
+ subgraph node-prod
  ap-.-cam1(<center>Camera<br><br>10.20.30.171</center>)
  ap-.-cam2(<center>Camera<br><br>10.20.30.172</center>)
  ap-.-phone(<center>Phone<br><br>10.20.30.191</center>)
  ap-.-ir(<center>IR<br><br>10.20.30.180</center>)
  end
- subgraph red2
+ subgraph web-prod
  switch---|100Mb|pi1(<center>RPi 3B<br><br>10.20.30.150</center>)
  switch---|1Gb|pi2(<center>RPi 3B+<br><br>10.20.30.151</center>)
  switch---|100Mb|nvr(<center>NVR<br><br>10.20.30.170</center>)
