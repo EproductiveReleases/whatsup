@@ -1,25 +1,25 @@
 # whatsup
 Whats Up test 
 ```mermaid
-graph TB
-    sq[Square shape] --> ci((Circle shape))
-
-    subgraph A
-        od>Odd shape]-- Two line<br/>edge comment --> ro
-        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
-        di==>ro2(Rounded square shape)
-    end
-
-    %% Notice that no text in shape are added here instead that is appended further down
-    e --> od3>Really long text with linebreak<br>in an Odd shape]
-
-    %% Comments after double percent signs
-    e((Inner / circle<br>and some odd <br>special characters)) --> f(,.?!+-*ز)
-
-    cyr[Cyrillic]-->cyr2((Circle shape Начало));
-
-     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
-     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
-     class sq,e green
-     class di orange
+graph TD
+ linkStyle default interpolate basis
+ wan1[<center>DSL 100/10 Mb<br><br>10.100.102.1</center>]---router{<center>EdgeRouter-X<br><br>10.20.30.1</center>}
+ ip((<center><br>IP<br><br></center>))-.-router
+ dns((<center><br>DNS<br><br></center>))-.-router
+ wan2[<center>LTE 50/20 Mb<br><br>192.168.1.1</center>]---router
+ router---|100Mb|ap[<center>RT-AC1200<br><br>10.20.30.3</center>]
+ router---|1Gb|pc(<center>PC<br><br>10.20.30.190</center>)
+ router---|1Gb|switch[<center>TL-SG105E<br><br>10.20.30.2</center>]
+ subgraph red1
+ ap-.-cam1(<center>Camera<br><br>10.20.30.171</center>)
+ ap-.-cam2(<center>Camera<br><br>10.20.30.172</center>)
+ ap-.-phone(<center>Phone<br><br>10.20.30.191</center>)
+ ap-.-ir(<center>IR<br><br>10.20.30.180</center>)
+ end
+ subgraph red2
+ switch---|100Mb|pi1(<center>RPi 3B<br><br>10.20.30.150</center>)
+ switch---|1Gb|pi2(<center>RPi 3B+<br><br>10.20.30.151</center>)
+ switch---|100Mb|nvr(<center>NVR<br><br>10.20.30.170</center>)
+ switch---|1Gb|laptop(<center>Laptop<br><br>10.20.30.192</center>)
+ end
 ```
