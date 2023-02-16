@@ -3,10 +3,9 @@ Whats Up test
 ```mermaid
 graph TD
  linkStyle default interpolate basis
- wan1[<center>DSL 100/10 Mb<br><br>10.100.102.1</center>]---router{<center>Traffic Manager<br><br>10.20.30.1</center>}
- ip((<center><br>IP<br><br></center>))-.-router
- dns((<center><br>DNS<br><br></center>))-.-router
- wan2[<center>LTE 50/20 Mb<br><br>192.168.1.1</center>]---router
+ myeps(<center><a href='http://google.com'>fa:fa-link MyEps</a></center>)<-->router{<center>Traffic Manager<br><br>10.20.30.1</center>}
+ myepr(<center><a href='http://google.com'>fa:fa-link MyEpr</a></center>)<-->router
+ mercury(<center><a href='http://google.com'>fa:fa-link Mercury</a></center>)-.-router
  router---|100Mb|ap[<center>RT-AC1200<br><br>10.20.30.3</center>]
  router---|1Gb|pc(<center>PC<br><br>10.20.30.190</center>)
  router---|1Gb|switch[<center>TL-SG105E<br><br>10.20.30.2</center>]
@@ -22,4 +21,6 @@ graph TD
  switch---|100Mb|nvr(<center>NVR<br><br>10.20.30.170</center>)
  switch---|1Gb|laptop(<center>Laptop<br><br>10.20.30.192</center>)
  end
+
+
 ```
