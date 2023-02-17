@@ -4,7 +4,7 @@ Whats Up test
 %%{init: {'theme': 'neutral', "flowchart" : { "curve" : "basis" } } }%%
 graph TD
  linkStyle default interpolate basis
- myeps(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>MyEps</a></center>)-->tm
+ myeps(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'><span style='color:black'>MyEps</span></a></center>)-->tm
  myepr(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myepr/README.md'>MyEpr</a></center>)-->tm
  mercury(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/mercury/README.md'>Mercury</a></center>)-->tm
  tm{<center>Traffic Manager<br><br>10.20.30.1</center>}
