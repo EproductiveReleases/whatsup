@@ -10,9 +10,9 @@ graph TD
  tm---|100Mb|ap[<center>RT-AC1200<br><br>10.20.30.3</center>]
  tm---|1Gb|pc(<center>PC<br><br>10.20.30.190</center>)
  tm---|1Gb|switch[<center>TL-SG105E<br><br>10.20.30.2</center>]
- subgraph node-prod
+ subgraph node-pool[<center><a href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>Middleware</a></center>]
   subgraph node1-prod
-  ap-.-cam1(<center>Camera<br><br>10.20.30.171</center>)
+  ap:::up-.-cam1(<center>Camera<br><br>10.20.30.171</center>)
   ap-.-cam2(<center>Camera<br><br>10.20.30.172</center>)
   end
  end
@@ -23,9 +23,19 @@ graph TD
  switch---|1Gb|laptop(<center>Laptop<br><br>10.20.30.192</center>)
  end
 
-style myeps fill:lightgreen,stroke:#333,stroke-width:4px
-style myepr fill:lightgreen,stroke:#333,stroke-width:4px
-style mercury fill:orange,stroke:#333,stroke-width:4px
-style tm fill:lightgreen
+classDef up fill:darkseagreen
+classDef issue fill:orange
+classDef down fill:orangered
+
+classDef app stroke:dodgerblue,stroke-width:4px
+
+myeps:::app
+myepr:::app
+mercury:::app
+
+myeps:::up
+myepr:::up
+tm:::up
+node-pool:::up
 
 ```
