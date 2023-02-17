@@ -4,14 +4,14 @@ Whats Up test
 %%{init: {'theme': 'neutral', "flowchart" : { "curve" : "basis" } } }%%
 graph TD
  linkStyle default interpolate basis
- myeps(<center><a style='color:black' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>MyEps</a></center>)-->tm
- myepr(<center><a style='color:black' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myepr/README.md'>MyEpr</a></center>)-->tm
- mercury(<center><a style='color:black' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/mercury/README.md'>Mercury</a></center>)-->tm
+ myeps(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>MyEps</a></center>)-->tm
+ myepr(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myepr/README.md'>MyEpr</a></center>)-->tm
+ mercury(<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/mercury/README.md'>Mercury</a></center>)-->tm
  tm{<center>Traffic Manager<br><br>10.20.30.1</center>}
  tm---|100Mb|ap[<center>RT-AC1200<br><br>10.20.30.3</center>]
  tm---|1Gb|pc(<center>PC<br><br>10.20.30.190</center>)
  tm---|1Gb|switch[<center>TL-SG105E<br><br>10.20.30.2</center>]
- subgraph node-pool[<center><a style='color:black' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>Middleware</a></center>]
+ subgraph node-pool[<center><a style='text-decoration:none' href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>Middleware</a></center>]
   subgraph node1-prod
   ap:::up-.-cam1(<center>Camera<br><br>10.20.30.171</center>)
   ap-.-cam2(<center>Camera<br><br>10.20.30.172</center>)
