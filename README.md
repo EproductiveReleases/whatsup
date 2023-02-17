@@ -1,7 +1,7 @@
 # whatsup
 Whats Up test 
 ```mermaid
-%%{init: {'theme': 'neutral', "flowchart" : { "curve" : "basis" } } }%%
+%%{init: {'theme': 'default', "flowchart" : { "curve" : "basis" } } }%%
 graph TD
  linkStyle default interpolate basis
  myeps(<center><a href='https://github.com/EproductiveReleases/whatsup/blob/main/applications/myeps/README.md'>MyEps</a></center>)-->tm
